@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="splash">
+    <img src="logo.png" alt="Logo" id="logo">
+  </div>
+
+  <div id="main-content">
+    <h1>Welcome to my site!</h1>
+    <p>This is the main content.</p>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("splash").style.opacity = 0;
+        document.getElementById("splash").style.pointerEvents = "none";
+      }, 2000); // 2 ثانیه نمایش لوگو
+    });
+  </script>
+</body>
+</html>
